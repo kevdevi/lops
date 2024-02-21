@@ -1,4 +1,4 @@
-// Importa los módulos necesarios
+// Importa los módulos necesarioss
 const express = require('express');
 const mongoose = require('mongoose');
 const Ticket = require('./models/Ticket');
@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://kevin:tmy9dO3F6NuBxgIi@cluster0.hn1j2o7.mongodb.
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'http://192.168.0.15:3001' // Permite solicitudes desde este origen
+  origin: 'http://192.168.0.15:3001' // Permite solicitud desde este origen
 }));
 
 const server = http.createServer(app);
